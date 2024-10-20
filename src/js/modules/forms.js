@@ -36,6 +36,7 @@ const forms = () => {
             console.log(item.files[0]);
             let dots;
             const arr = item.files[0].name.split('.');
+
             arr[0].length > 14 ? dots = "..." : dots = '.';
             const name = arr[0].substring(0, 13) + dots + arr[1];
             item.previousElementSibling.textContent = name;
